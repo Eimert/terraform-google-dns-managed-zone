@@ -42,3 +42,15 @@ terraform destroy
 
 This module can be used to register a type A (name) DNS record, linking a DNS name to a VM ip address. Terraform usage example in [github.com/Eimert/terraform-google-compute-engine-instance](https://github.com/Eimert/terraform-google-compute-engine-instance).
 
+## DNS Managed Zone
+
+Result in google cloud console, after running the example (minus the A record):
+<img src="./img/console.cloud.google.com-cloud.eimertvink.nl.png" border="1"><br>
+
+My personal domain [eimertvink.nl](http://eimertvink.nl/) is configured with NS of [freedns](https://freedns.afraid.org). This terraform plan configures Google Cloud to act as the NS for the subdomain cloud.eimertvink.nl.<br>
+
+But that's not all. Freedns must forwards dns queries to \*.cloud.eimertvink.nl to Google's NS.
+This is the configuration of freedns:
+<img src="./img/freedns-cloud.eimertvink.nl.png" border="1"><br>
+The subdomain cloud.eimertvink.nl is configured to forward queries to Google' nameservers.
+
