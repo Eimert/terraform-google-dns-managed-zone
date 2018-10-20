@@ -16,5 +16,5 @@ variable "dns_zone" {
 
 variable "description" {
   description = "dns_managed_zone resource description (optional)"
-  value = "Managed by Terraform"
+  default = "Managed by Terraform"
 }
