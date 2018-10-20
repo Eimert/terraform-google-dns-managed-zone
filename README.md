@@ -50,7 +50,7 @@ Result in google cloud console, after running the example (minus the A record):
 My personal domain [eimertvink.nl](http://eimertvink.nl/) is configured with NS of [freedns](https://freedns.afraid.org). This terraform plan configures Google Cloud to act as the NS for the subdomain cloud.eimertvink.nl.<br>
 
 But that's not all. Freedns must forwards dns queries to \*.cloud.eimertvink.nl to Google's NS.
-This is the configuration of freedns:
-<img src="./img/freedns-cloud.eimertvink.nl.png" border="1"><br>
-The subdomain cloud.eimertvink.nl is configured to forward queries to Google' nameservers.
+This is the configuration of freedns:<br>
+<img src="./img/freedns-cloud.eimertvink.nl.png" border="1"><br><br>
+Now the subdomain cloud.eimertvink.nl is configured to forward queries to Google' nameservers. And Google Cloud is providing DNS for queries to resources under \*.cloud.eimertvink.nl.
 
