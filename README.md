@@ -1,6 +1,6 @@
 # terraform-google-dns-managed-zone
 
-Create a DNS managed zone on Google Cloud.<br>
+Create a DNS managed zone on Google Cloud. Module in [Terraform Registry](https://registry.terraform.io/modules/Eimert/dns-managed-zone/).<br>
 
 ## Usage
 
