@@ -1,10 +1,3 @@
-variable "region" {
-  description = "GC region"
-}
-
-variable "zone" {
-  description = "GC zone"
-}
 
 variable "dns_name" {
   description = "Descriptive name for dns_zone. See README.md with example for creating resource google_dns_managed_zone."
